@@ -1,0 +1,14 @@
+import {readFileSync, writeFileSync} from 'node:fs';
+import {createFixture} from './control-fixture.mjs';
+const source = readFileSync(new URL('../sketches/cat_robot/control_page.h', import.meta.url), 'utf8');
+const page = source.split('R"HTML(')[1].split(')HTML";')[0].replace('__TOKEN__', 'preview-only');
+const check = readFileSync(new URL('./check-control-browser.js', import.meta.url), 'utf8');
+const fixture = `<script>window.fetch=(${createFixture.toString()})();
+const timers=[];let elapsed=0;
+window.setInterval=(callback,ms)=>{timers.push({callback,ms,next:ms});return timers.length;};
+window.__advance=async ms=>{const until=elapsed+ms;while(elapsed<until){elapsed+=10;for(const timer of timers)if(timer.next<=elapsed){timer.next+=timer.ms;timer.callback();}for(let i=0;i<20;i++)await Promise.resolve();}};
+</script>`;
+const tests = `<script>${check.trim()}.then(result=>{window.__testResult=result;console.log(JSON.stringify(result));}).catch(error=>{window.__testResult={passed:false,error:error.message};console.error(error.stack);});</script>`;
+const output = page.replace('<script>', fixture + '<script>').replace('</body>', tests + '</body>');
+if (!process.argv[2]) throw new Error('Output HTML path required');
+writeFileSync(process.argv[2], output);

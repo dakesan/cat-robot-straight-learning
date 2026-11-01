@@ -1,0 +1,34 @@
+{
+  "validation_trials": [
+    "train-008",
+    "train-012",
+    "train-016",
+    "train-020",
+    "train-023",
+    "train-024"
+  ],
+  "validation_frames": 439,
+  "speed_median_rmse": 0.01266453933872786,
+  "zero_rmse": 0.01305790146518187,
+  "students": {
+    "label_correction": {
+      "rmse": 0.011515721085005315,
+      "training_trials": 23,
+      "training_cv_rmse": 0.012438303551393616
+    },
+    "teacher_correction": {
+      "rmse": 0.012515770853804916,
+      "training_trials": 23,
+      "training_cv_rmse": 0.016785087442414783
+    },
+    "truth_correction": {
+      "rmse": 0.011515721085005315,
+      "training_trials": 23,
+      "training_cv_rmse": 0.012438303551393616
+    }
+  },
+  "teacher": {
+    "rmse": 0.020741174482435558,
+    "frames": 439
+  }
+}

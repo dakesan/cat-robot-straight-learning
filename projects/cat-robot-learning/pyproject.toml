@@ -1,0 +1,43 @@
+[build-system]
+requires = ["scikit-build-core>=0.11", "pybind11>=3"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "catrobot-learning"
+version = "0.1.0"
+description = "Measured straight-line compensation for a two-wheel cat robot"
+requires-python = ">=3.12"
+dependencies = [
+  "typer>=0.16",
+  "numpy>=2",
+  "scipy>=1.15",
+  "scikit-learn>=1.7",
+  "mujoco>=3.3",
+  "opencv-python-headless>=4.11",
+  "av>=14",
+  "httpx>=0.28",
+  "pydantic>=2.10",
+  "matplotlib>=3.10",
+  "pandas>=2.2",
+  "reportlab>=4",
+  "pyserial>=3.5",
+]
+
+[project.scripts]
+catrobot = "catrobot.cli:app"
+
+[dependency-groups]
+cad = [
+    "cadquery-ocp-novtk>=7.9,<8 ; python_full_version < '3.15'",
+]
+dev = ["pytest>=8", "ruff>=0.12"]
+
+[tool.scikit-build]
+wheel.packages = ["src/catrobot"]
+build-dir = "build/{wheel_tag}"
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

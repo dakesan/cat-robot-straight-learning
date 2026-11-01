@@ -1,0 +1,93 @@
+{
+  "provenance": "measured",
+  "calibration_notes": "Measured controller calibration; physical-model validation is recorded separately.",
+  "physics_calibrated": false,
+  "left": {
+    "radius_m": 0.0215,
+    "counts_per_revolution": 829.8,
+    "encoder_sign": 1,
+    "feedforward": 91.00306312250449,
+    "deadband_percent": 11.673362428389598,
+    "motor_gain": 1.0,
+    "motor_velocity_per_percent": 0.011152513128609015,
+    "motor_deadband_percent": 12.21521126307853,
+    "time_constant_s": 0.22386947214714625,
+    "toe_deg": 0.0,
+    "contact_radius_scale": 1.0,
+    "max_torque_nm": 0.04,
+    "response_fit_rms_m": 0.006249748011724852
+  },
+  "right": {
+    "radius_m": 0.0215,
+    "counts_per_revolution": 829.8,
+    "encoder_sign": -1,
+    "feedforward": 97.48383960522159,
+    "deadband_percent": 9.777602795307716,
+    "motor_gain": 1.0,
+    "motor_velocity_per_percent": 0.010561197571615498,
+    "motor_deadband_percent": 10.779691692380448,
+    "time_constant_s": 0.20947166327696273,
+    "toe_deg": 0.0,
+    "contact_radius_scale": 1.0,
+    "max_torque_nm": 0.04,
+    "response_fit_rms_m": 0.0076630619468322034
+  },
+  "track_m": 0.14,
+  "length_m": 0.18,
+  "width_m": 0.12,
+  "mass_kg": 0.45,
+  "caster_x_m": -0.06,
+  "floor_friction": 0.8,
+  "motor_gain_jitter_fraction": 0.0,
+  "kp": 100.0,
+  "ki": 100.0,
+  "max_speed_mps": 0.248019752419136,
+  "marker_size_m": 0.06,
+  "marker_height_m": 0.13,
+  "marker_offset_x_m": 0.015,
+  "marker_offset_y_m": -0.005,
+  "marker_yaw_deg": 32.0,
+  "marker_id": 0,
+  "led_offset": [
+    1.17,
+    0.15
+  ],
+  "cad_visual": {
+    "asset": "shapr3d-20261029",
+    "source_sha256": "4f48d8dd5977746fc75255ecf37102bf9b9fc5e5dde23491ad8452e91d3bd3ba",
+    "position_m": [
+      0.0,
+      0.0,
+      -0.0245
+    ],
+    "quaternion_wxyz": [
+      0.7071067811865476,
+      0.0,
+      0.0,
+      -0.7071067811865476
+    ],
+    "alignment": "orientation_confirmed"
+  },
+  "ball_casters": [
+    {
+      "position_m": [
+        0.05,
+        0.0,
+        -0.041499999999999995
+      ],
+      "radius_m": 0.01,
+      "mass_kg": 0.01,
+      "joint_damping": 1e-05
+    },
+    {
+      "position_m": [
+        -0.05,
+        0.0,
+        -0.041499999999999995
+      ],
+      "radius_m": 0.01,
+      "mass_kg": 0.01,
+      "joint_damping": 1e-05
+    }
+  ]
+}

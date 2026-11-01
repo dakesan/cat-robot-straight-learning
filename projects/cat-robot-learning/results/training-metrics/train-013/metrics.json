@@ -1,0 +1,13 @@
+{
+  "trial_id": "train-013",
+  "split": "train",
+  "source": "measured",
+  "mode": "speed",
+  "speed_mps": 0.1116088885886112,
+  "correction": 0.01,
+  "config_hash": "712dae6e1e17c3b957ef002169f95d6fa5a9cda7f9c18579dbc57da5752a3895",
+  "reached": true,
+  "quality_ok": true,
+  "lateral_at_goal_m": -0.009230673462512282,
+  "heading_at_goal_rad": -0.13527453563037659
+}

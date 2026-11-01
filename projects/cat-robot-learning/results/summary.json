@@ -1,0 +1,72 @@
+{
+  "source": "measured",
+  "groups": [
+    {
+      "mode": "pwm",
+      "target_speed_mps": 0.1116088885886112,
+      "n": 5,
+      "reached": 5,
+      "quality_failed": 0,
+      "successes": 0,
+      "median_max_lateral_m": 0.23711329595169575,
+      "median_abs_heading_rad": 0.8552427460024243,
+      "median_actual_speed_mps": 0.07361153160126307
+    },
+    {
+      "mode": "pwm",
+      "target_speed_mps": 0.19841580193530883,
+      "n": 2,
+      "reached": 2,
+      "quality_failed": 0,
+      "successes": 0,
+      "median_max_lateral_m": 0.12077057955748499,
+      "median_abs_heading_rad": 0.42700207786148003,
+      "median_actual_speed_mps": 0.17527478716547645
+    },
+    {
+      "mode": "speed",
+      "target_speed_mps": 0.1116088885886112,
+      "n": 2,
+      "reached": 2,
+      "quality_failed": 1,
+      "successes": 1,
+      "median_max_lateral_m": 0.044736967467648575,
+      "median_abs_heading_rad": 0.0786653722637678,
+      "median_actual_speed_mps": 0.1182418540645774
+    },
+    {
+      "mode": "speed",
+      "target_speed_mps": 0.19841580193530883,
+      "n": 4,
+      "reached": 4,
+      "quality_failed": 0,
+      "successes": 1,
+      "median_max_lateral_m": 0.018585493765122772,
+      "median_abs_heading_rad": 0.09368458979625752,
+      "median_actual_speed_mps": 0.21642922848610888
+    },
+    {
+      "mode": "learned",
+      "target_speed_mps": 0.1116088885886112,
+      "n": 2,
+      "reached": 2,
+      "quality_failed": 1,
+      "successes": 1,
+      "median_max_lateral_m": 0.02106388806200655,
+      "median_abs_heading_rad": 0.08650936205154153,
+      "median_actual_speed_mps": 0.11606004345787052
+    },
+    {
+      "mode": "learned",
+      "target_speed_mps": 0.19841580193530883,
+      "n": 4,
+      "reached": 4,
+      "quality_failed": 0,
+      "successes": 4,
+      "median_max_lateral_m": 0.0235410697944406,
+      "median_abs_heading_rad": 0.05426244688447704,
+      "median_actual_speed_mps": 0.21166320811705847
+    }
+  ],
+  "model_id": "e1dd0814ec65629c"
+}

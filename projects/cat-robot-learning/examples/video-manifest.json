@@ -1,0 +1,8 @@
+[
+  {"source": "explanation", "duration_s": 15, "caption": "A handmade robot learns to drive straight.\nWheel encoders for control; a phone camera for measurement."},
+  {"source": "measured", "video": "before.mp4", "duration_s": 10, "speed": 1, "caption": "Before correction: equal motor outputs."},
+  {"source": "explanation", "duration_s": 15, "caption": "Train on 30 runs. Freeze the model.\nEvaluate on 30 different runs; retain stops and failures."},
+  {"source": "simulated", "video": "simulation.mp4", "duration_s": 10, "speed": 1, "caption": "The same C++ controller runs inside MuJoCo."},
+  {"source": "measured", "video": "after.mp4", "duration_s": 10, "speed": 1, "caption": "After correction: camera is not used by the controller."},
+  {"source": "explanation", "image": "comparison.png", "duration_s": 20, "caption": "Compare deviation, heading, actual speed and completion.\nReport the measured result, including any missed targets."}
+]

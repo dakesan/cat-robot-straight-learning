@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "source_file": "chassis.step",
+  "source_sha256": "4f48d8dd5977746fc75255ecf37102bf9b9fc5e5dde23491ad8452e91d3bd3ba",
+  "source_length_units": [
+    "millimetre"
+  ],
+  "import_length_unit": "millimetre",
+  "mesh_length_unit": "metre",
+  "converter": "cadquery-ocp-novtk 7.9.3.1.1",
+  "linear_deflection_mm": 0.15,
+  "angular_deflection_rad": 0.15,
+  "bounds_m": [
+    [
+      -0.075,
+      -0.075,
+      0.0
+    ],
+    [
+      0.075,
+      0.075,
+      0.049
+    ]
+  ],
+  "dimensions_m": [
+    0.15,
+    0.15,
+    0.049
+  ],
+  "total_volume_m3": 0.00046934331130713344,
+  "uniform_density_centroid_m": [
+    -1.3606654693822865e-13,
+    1.7103658894327131e-12,
+    0.023809598148398503
+  ],
+  "mass_kg": null,
+  "hardware_alignment": "unconfirmed",
+  "solids": [
+    {
+      "name": "solid-01",
+      "step_name": "ボディ 03",
+      "file": "solid-01.obj",
+      "sha256": "bf76803dbe7ae49a78d7dc577e8b0226e4f12753015f8a664cb47ad7c4bed254",
+      "bounds_m": [
+        [
+          0.060469796412,
+          -0.025,
+          0.043
+        ],
+        [
+          0.075,
+          0.025,
+          0.049
+        ]
+      ],
+      "volume_m3": 3.935158487644159e-06,
+      "uniform_density_centroid_m": [
+        0.06709019702037165,
+        3.119429974241363e-12,
+        0.046000000000000006
+      ],
+      "vertices": 60,
+      "triangles": 48
+    },
+    {
+      "name": "solid-02",
+      "step_name": "ボディ 02",
+      "file": "solid-02.obj",
+      "sha256": "1a80740ec4e4585add08cfb5889c940e52a5b8d0104f66995a2cc209c26e5f98",
+      "bounds_m": [
+        [
+          -0.075,
+          -0.025,
+          0.043
+        ],
+        [
+          -0.060469796412,
+          0.025,
+          0.049
+        ]
+      ],
+      "volume_m3": 3.9351584885801864e-06,
+      "uniform_density_centroid_m": [
+        -0.06709019702043445,
+        1.306547804609494e-12,
+        0.046
+      ],
+      "vertices": 62,
+      "triangles": 48
+    },
+    {
+      "name": "solid-03",
+      "step_name": "ボディ 01",
+      "file": "solid-03.obj",
+      "sha256": "5576049d38fc5aaf2896a518a9aee134e35ffbcc6ed50dd3cfb7ec94252a01ae",
+      "bounds_m": [
+        [
+          -0.0707106781299943,
+          -0.075,
+          0.0
+        ],
+        [
+          0.0707106781299943,
+          0.075,
+          0.049
+        ]
+      ],
+      "volume_m3": 0.0004614729943309091,
+      "uniform_density_centroid_m": [
+        -1.7694929708562209e-15,
+        1.7017937684695554e-12,
+        0.023431145891067352
+      ],
+      "vertices": 4456,
+      "triangles": 4428
+    }
+  ]
+}
